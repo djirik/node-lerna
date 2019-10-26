@@ -1,3 +1,4 @@
+#Node 12.10
 FROM node:12.10
 RUN apt-get update && apt-get install -y git openssh-client \
     zlib1g \
