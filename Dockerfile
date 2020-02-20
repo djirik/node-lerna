@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:10.14
 RUN apt-get update && apt-get install -y git openssh-client \
     zlib1g \
     zlib1g-dev \
@@ -6,5 +6,7 @@ RUN apt-get update && apt-get install -y git openssh-client \
     libwebp-dev \
     libjpeg-dev \
     build-essential \
-    automake
+    automake \
+    python \
+    libpng-dev
 RUN npm -g install lerna apollo
